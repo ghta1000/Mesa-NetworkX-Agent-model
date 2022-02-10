@@ -50,7 +50,7 @@ class TumorModel(Model):
         #self.G = nx.gnr_graph(self.redirected_nodes, self.prob, create_using=self.GR, seed=None)
         self.G = nx.powerlaw_cluster_graph(n=self.num_nodes, m=2, p=self.prob, seed=None)
         #self.G = nx.random_powerlaw_tree(n=self.num_nodes, gamma=3, seed=None, tries=10)
-        self.GP = nx.write_graphml(self.G, "Growcluster.1.1.graphml")
+        self.GP = nx.write_graphml(self.G, "Growcluster#.graphml")
         self.D = nx.density(self.G)
         self.O = nx.write_graphml(self.G,"OutputC1.graphml", encoding='utf-8', prettyprint=True)
         self.M = nx.to_numpy_matrix(self.G)
@@ -68,8 +68,6 @@ class TumorModel(Model):
 
 
 
-
-
         t_start = time.time()
 
         # Create agents
@@ -79,6 +77,7 @@ class TumorModel(Model):
                            self.Angioprevention_chance)
 
             self.schedule.add(a)
+            
             # Add the agent to the node
             self.grid.place_agent(a, node)
 
@@ -95,7 +94,7 @@ class TumorModel(Model):
 
 
         np.savetxt('Matrix.out', self.M, fmt='%s')
-        w = csv.writer(open("Dictionary6.2.csv", "w"))
+        w = csv.writer(open("Dictionary#.csv", "w"))
 
         for key, val in dict.items(self.C):
             w.writerow([key, val])
@@ -126,7 +125,6 @@ class TumorModel(Model):
         print("model run")
         for i in range(n):
             self.step()
-
 
 
 
