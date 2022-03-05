@@ -4,8 +4,11 @@ Simulation and analysis of multiscale graph agent-based tumor model
 1. [Introduction](#introduction)
 	1. [Dependencies](#Mesa)
 	2. [Tumor Growth Simulation](#Tumor)
-  3. [Documentation](#ref_doc)
-
+	3. [Documentation](#ref_doc)
+	4. [Author](#ref_Aut)
+	5. [Research Group](#res_G)
+     
+        
 # Introduction <a name="introduction"></a>
 Python data visualization provides strong support for integration with several technologies and higher programming productivity across the development lifecycle.
 In this Model, the front-end integration is the strength of Python modeling based on packages such as an ABM package (Mesa), analysis, and visualization packages (Numpy, SciPy, Matplotlib).
@@ -33,4 +36,7 @@ In the Mesa framework, for studying the model’s behavior under different condi
 *Tashakor G, Suppi R. Simulation and computational analysis of multiscale graph agent-based tumor model. In2019 International Conference on High Performance Computing & Simulation (HPCS) 2019 Jul 15 (pp. 298-304). IEEE.
 
 *Tashakor G., Suppi R. (2019). Simulation and analysis of a multi-scale tumor model using agent clustered network. Proceedings of the 18th International Conference on Modelling and Applied Simulation (MAS 2019), pp. 64-71. DOI: https://doi.org/10.46354/i3m.2019.mas.009
-*
+
+##### Author: Ghazal Tashakor (g.tashakor at e-campus.uab.cat.es) <a name="ref_Aut"></a>
+###### Research Group: http://grupsderecerca.uab.cat/hpc4eas/ <a name="res_G"></a>
+
