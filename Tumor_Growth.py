@@ -13,15 +13,11 @@ import json
 import csv as csv
 
 
-
-
 class State(Enum):
     CSC = 1# Tumor Cells
     inflammatory = 2
     Stem = 3.# Normal Cells
     Dead = 0# Apoptotic Cells
-
-
 
 def number_state(model, state):
     return sum([1 for a in model.grid.get_all_cell_contents() if a.state is state])
@@ -65,7 +61,6 @@ class TumorModel(Model):
                                             "inflammatory": number_M,
                                             "Dead": number_dead,
                                             "Stem": number_Stem})
-
 
 
         t_start = time.time()
